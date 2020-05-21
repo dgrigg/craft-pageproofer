@@ -1,0 +1,36 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * PageProofer plugin for Craft CMS 3.x
+ *
+ * PageProofer Settings.twig
+ *
+ * @author    Derrick Grigg
+ * @copyright Copyright (c) 2020 Derrick Grigg
+ * @link      https://pageproofer.com
+ * @package   PageProofer
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("dgrigg\\pageproofer\\assetbundles\\pageproofer\\PageProoferAsset") %}
+
+{{ forms.textField({
+    label: 'PageProofer site api key',
+    instructions: 'Visit <a href="https://app.pageproofer.com">https://app.pageproofer.com</a> and go to the site settings, click on the "javascript embed" to get your unique site api key.',
+    id: 'apiKey',
+    name: 'apiKey',
+    value: settings['apiKey']})
+}}
+
+
+{{ forms.lightswitchField({
+    label: 'Enabled',
+    instructions: 'Display PageProofer on your website.',
+    id: 'enabled',
+    name: 'enabled',
+    on: settings['enabled']})
+}}
+

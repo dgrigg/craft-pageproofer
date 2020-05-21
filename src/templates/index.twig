@@ -1,0 +1,46 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * PageProofer plugin for Craft CMS 3.x
+ *
+ * PageProofer index.twig
+ *
+ * @author    Derrick Grigg
+ * @copyright Copyright (c) 2020 Derrick Grigg
+ * @link      https://pageproofer.com
+ * @package   PageProofer
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("dgrigg\\pageproofer\\assetbundles\\pageproofer\\PageProoferAsset") %}
+{% do view.registerAssetBundle("dgrigg\\pageproofer\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "https://github.com/dgrigg/page-proofer/blob/master/README.md" %}
+
+{# The title of this CP section #}
+{% set title = "PageProofer" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('pageproofer') %}
+
+{# Get a URL to an image in our AssetBundle #}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@dgrigg/pageproofer/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('page-proofer') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('page-proofer') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}

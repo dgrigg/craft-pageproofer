@@ -1,0 +1,41 @@
+{
+    "name": "dgrigg/pageproofer",
+    "description": "The easiest way to request changes and report bugs on your website!",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "pageproofer"
+    ],
+    "support": {
+        "docs": "https://github.com/dgrigg/craft-pageproofer/blob/master/README.md",
+        "issues": "https://github.com/dgrigg/craft-pageproofer/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Derrick Grigg",
+            "homepage": "https://pageproofer.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "dgrigg\\pageproofer\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "PageProofer",
+        "handle": "pageproofer",
+        "developer": "Derrick Grigg",
+        "developerUrl": "https://pageproofer.com",
+        "documentationUrl": "https://github.com/dgrigg/craft-pageproofer/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/dgrigg/craft-pageproofer/master/CHANGELOG.md",
+        "class": "dgrigg\\pageproofer\\PageProofer"
+    }
+}
