@@ -102,7 +102,7 @@ class PageProofer extends Plugin
           if ($settings->enabled) {
             $script = "(function (d, t) {
               var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
-              pp.src = '//dev.app.pageproofer.com/embed/{$settings->apiKey}';
+              pp.src = '//app.pageproofer.com/embed/{$settings->apiKey}';
               pp.type = 'text/javascript';
               pp.async = true;
               s.parentNode.insertBefore(pp, s);
