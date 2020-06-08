@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+	  <meta name="theme-color" content="#ffffff">
+
+    {{ craft.twigpack.includeCssModule("main.css") }}
+</head>
+<body class=" " >
+    <!-- main navigation -->
+    <header class="w-full z-50 relative " data-js-module="navigation">
+        <nav class=" w-full flex justify-between items-end px-15" data-background="{{ navClass is defined ? navClass : 'bg-white' }}">
+          <ul class="flex pt-20 -mx-3 font-medium">
+            <li class="inline-block px-3"><a class="uppercase" href="#">Work</a></li>
+            <li class="inline-block px-3"><a class="uppercase" href="#">Insight</a></li>
+            <li class="inline-block px-3"><a href="#">News</a></li>
+            <li class="inline-block px-3"><a href="#">About</a></li>
+            <li class="inline-block px-3"><a href="#">Careers</a></li>
+            <li class="inline-block px-3"><a href="#">Contact</a></li>
+          </ul>
+          <div>
+            <a href="#"><img src="/build/images/twoxfour.png"/></a>
+          </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-row flex-wrap">
+      {% block body %}
+      {% endblock %}
+    </main>
+
+    <!-- contact -->
+    <footer data-js-module="footer"  class="" id="contact">
+
+
+
+        <div class="flex flex-wrap ">
+            <div class="hidden lg:block lg:w-1/2 px-1-1/2 md:px-3 xxl:px-5"></div>
+            <div class="w-full md:w-1/2 lg:w-1/4 px-1-1/2 md:px-3 xxl:px-5">
+                <p>&copy;{{now|date('Y')}} 2x4</p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 px-1-1/2 md:px-3 xxl:px-5">
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    {{ craft.twigpack.includeJsModule("main.js") }}
+
+
+</body>
+</html>

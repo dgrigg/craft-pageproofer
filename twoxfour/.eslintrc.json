@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier", "import", "dollar-sign"],
+  "rules": {
+    "no-console": "off",
+    "prettier/prettier": "error",
+    "dollar-sign/dollar-sign": [2, "ignoreProperties"]
+  },
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "node_modules/laravel-mix/setup/webpack.config.js"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "dgrigg/craft-3-boilerplate",
+  "description": "Craft 3 boilerplate setup, includes basic js/css/webpack setup",
+  "version": "1.1.7",
+  "authors": [
+    {
+      "name": "Derrick Grigg",
+      "email": "derrick@dgrigg.com"
+    }
+  ],
+  "support": {
+    "docs": "https://github.com/dgrigg/craft-3-boilerplate/blob/master/README.md",
+    "issues": "https://github.com/dgrigg/craft-3-boilerplate/issues"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "craftcms/cms": "^3.4",
+    "craftcms/redactor": "^2.6",
+    "dgrigg/craft-migration-assistant": "^3.1.1",
+    "mmikkel/retcon": "^2.0",
+    "nystudio107/craft-seomatic": "^3.2",
+    "nystudio107/craft-twigpack": "^1.1",
+    "putyourlightson/craft-blitz": "^3.4",
+    "sebastianlenz/linkfield": "^1.0",
+    "spicyweb/craft-neo": "^2.5",
+    "verbb/navigation": "^1.1",
+    "verbb/super-table": "^2.4",
+    "vlucas/phpdotenv": "^3.4.0",
+    "ostark/craft-plugin-commands": "^1.0"
+
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.0"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}
