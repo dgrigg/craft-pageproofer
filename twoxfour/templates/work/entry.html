@@ -1,0 +1,123 @@
+{% set jsModule = 'work' %}
+{% extends "_layouts/base-layout.twig" %}
+
+{% block body %}
+
+
+
+<section class="w-full ">
+  <div class="relative overflow-hidden">
+    <h2 class="relative text-8xl font-bold -ml-5 text-gray-900 "><span class="text-gray-500">Work</span> <span
+        class="text-orange-900">/</span> Ariat</h2>
+  </div>
+</section>
+
+<section class="w-full relative">
+  <img class="w-full h-auto" src="/uploads/work-entry-fpo1.jpg" />
+  <div class="w-full absolute left-0 bottom-0">
+    <div class="w-full flex flex-row max-w-screen-xl mx-auto text-white pb-11">
+      <div class="w-1/6"></div>
+      <div class="w-4/6">
+        <h1 class="text-6xl font-bold leading-tight">This ain't our first rodeo.</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-900 w-full">
+  <div class="flex flex-row w-full py-12 max-w-screen-xl mx-auto">
+    <div class="w-1/6"></div>
+    <div class="w-full lg:w-5/6 text-white text-2xl pr-8 ">
+      <p><span class="text-orange-900 leading-relaxed">Ariat international&mdash;</span> was a cowboy boot brand trying
+        to make its way into professional rodeo. However, breaking into rodeo is no easy feat considering their main
+        competitor, Justin Boots, had dominated the industry for decades. Ariat turned to us to validate them as a
+        serious Western brand and create a strong emotional link to the world of rodeo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- carousel -->
+<section class="w-full">
+  <div class="swiper-container w-full h-auto js-carousel">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/uploads/work-entry-fpo2.jpg" class="w-full h-auto"></div>
+      <div class="swiper-slide"><img src="/uploads/work-entry-fpo3.jpg" class="w-full h-auto"></div>
+    </div>
+    <div
+      class="swiper-button-prev rounded-full bg-white w-15 h-15 text-orange-900 shadow-lg ml-8 hover:bg-black transition-all duration-300">
+      <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg></div>
+    <div
+      class="swiper-button-next rounded-full bg-white w-15 h-15 text-orange-900 shadow-lg mr-8 hover:bg-black transition-all duration-300">
+      <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg></div>
+  </div>
+</section>
+
+<!-- video -->
+
+<section class="w-full" data-js-module="video">
+  <div class="w-full relative">
+    <img src="/uploads/work-entry-fpo4.jpg" class="block w-full h-auto" />
+    <button
+      class="js-modal-btn rounded-full bg-orange-900 w-15 h-15 text-white absolute inset-x-1/2 inset-y-1/2 translate-x-1/2 translate-y-1/2 flex items-center justify-center hover:bg-black transition-all duration-300 outline-none"
+      data-video-id="ye5BuYf8q4o"><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20">
+        <path d="M4 4l12 6-12 6z" /></svg></button>
+  </div>
+</section>
+
+<!-- image grid -->
+<section class="w-full ">
+  <div class="w-full flex flex-row items-stretch max-w-screen-xl mx-auto px-4 py-16 bg-white">
+    <div class="w-1/2 px-8">
+      <div class="w-full h-full relative">
+        <img src="/uploads/work-entry-fpo5.jpg" class="absolute top-0 left-0 w-full h-full object-cover" />
+      </div>
+    </div>
+    <div class="w-1/2 flex flex-col">
+      <div class="pb-8 pr-4">
+        <div class="aspect-ratio-53/42 relative">
+          <img src="/uploads/work-entry-fpo6.jpg" class="absolute top-0 left-0 w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="pt-8 pr-4">
+        <div class="aspect-ratio-53/42 relative">
+          <img src="/uploads/work-entry-fpo7.jpg" class="absolute top-0 left-0 w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="w-full mb-16">
+  <img src="/uploads/work-entry-fpo8.jpg" class="w-full h-auto" />
+</section>
+
+<section class="w-full mb-16">
+  <div class="w-full max-w-screen-xl mx-auto flex flex-row items-center p-8 ">
+    <div class="w-1/2 ">
+      <h3 class="font-bold text-5xl leading-snug tracking-tight mb-8">Witty result headline would go here and be so F'n
+        legendary.</h3>
+      <p class="text-gray-500"><strong class="text-black">Subhead would go here and be all bold and stuff. </strong>Then
+        the copy would go here and be a bit about reults and be accompanied by a graphic. Like something really awesome
+        and not stupid looking because stupid is as stupid does. Whatever Forest shut up this is just greek copy.</p>
+    </div>
+    <div class="w-1/2 pl-8">
+      <img src="/uploads/work-entry-fpo9.jpg" class="w-full h-auto" />
+    </div>
+  </div>
+</section>
+
+<section class="w-full pt-25 pb-37">
+  <div class="text-center">
+    <a href="#"
+      class="inline-flex items-center bg-white text-black font-medium text-base rounded-full hover:bg-black hover:text-white group-hover:bg-black group-hover:text-white px-6 py-2 border-2 border-black transition-all duration-300">
+      <span>BUT WAIT - There's So Much More</span>
+    </a>
+  </div>
+</section>
+
+{% endblock %}

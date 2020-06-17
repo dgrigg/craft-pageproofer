@@ -1,0 +1,235 @@
+{% set jsModule = 'about' %}
+{% extends "_layouts/base-layout.twig" %}
+
+{% block body %}
+
+<section class="w-full">
+  <div class="relative overflow-hidden">
+    <h2 class="relative text-2xxl font-bold -left-10vw leading-none tracking-tighter text-gray-900 ">About</h2>
+  </div>
+</section>
+
+
+<section class="w-full relative">
+  <img class="w-full h-auto" src="/uploads/about-fpo1.jpg" />
+  <div class="w-full absolute left-0 bottom-0">
+    <div class="w-full flex flex-row max-w-screen-xl mx-auto text-white pb-11">
+      <div class="w-4/6">
+        <h1 class="text-6xl font-bold leading-tight">Here's the thing about </h1>
+        <h1 class="text-6xl font-bold leading-tight">"About" pages ...</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w-full">
+  <div class="flex flex-row w-full pt-35 pb-30 max-w-screen-xl mx-auto">
+    <div class="w-1/6"></div>
+    <div class="w-full lg:w-4/6 text-black text-2xl pr-28">
+      <p><span class="text-orange-900 leading-relaxed">Look, we're in the business of helping brands &mdash;</span>
+        change what they're all about. So, for us, the whole idea of an “about” page kinda goes against what we stand
+        for. Why? Well, for one thing, most brands find themselves in a tumultuous environment that is changing rapidly.
+        Their customers are better informed, better connected, and more decisive than ever before.</p>
+    </div>
+  </div>
+</section>
+
+<section class="w-full mb-15">
+  <div class="w-full overflow-hidden">
+    <h2 class="relative text-xxl font-bold leading-collapse tracking-tighter text-gray-900 -ml-16 ">Who</h2>
+  </div>
+</section>
+
+<!-- carousel -->
+<section class="w-full mb-24">
+  <div class="swiper-container w-full h-auto js-carousel" data->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="/uploads/about-who-fpo1.jpg" class="w-full h-auto" />
+        <div class="pt-4 pl-5">
+          <h3 class="text-xl font-bold text-teal-900">Person Name</h3>
+          <h4 class="text-sm text-gray-900">Job Title</h4>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/uploads/about-who-fpo2.jpg" class="w-full h-auto" />
+        <div class="pt-4 pl-5">
+          <h3 class="text-xl font-bold text-teal-900">Person Name</h3>
+          <h4 class="text-sm text-gray-900">Job Title</h4>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/uploads/about-who-fpo3.jpg" class="w-full h-auto" />
+        <div class="pt-4 pl-5">
+          <h3 class="text-xl font-bold text-teal-900">Person Name</h3>
+          <h4 class="text-sm text-gray-900">Job Title</h4>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/uploads/about-who-fpo4.jpg" class="w-full h-auto" />
+        <div class="pt-4 pl-5">
+          <h3 class="text-xl font-bold text-teal-900">Person Name</h3>
+          <h4 class="text-sm text-gray-900">Job Title</h4>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/uploads/about-who-fpo5.jpg" class="w-full h-auto" />
+        <div class="pt-4 pl-5">
+          <h3 class="text-xl font-bold text-teal-900">Person Name</h3>
+          <h4 class="text-sm text-gray-900">Job Title</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="swiper-button-prev rounded-full bg-white w-15 h-15 text-orange-900 shadow-lg ml-8 hover:bg-black transition-all duration-300">
+      <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg></div>
+    <div
+      class="swiper-button-next rounded-full bg-white w-15 h-15 text-orange-900 shadow-lg mr-8 hover:bg-black transition-all duration-300">
+      <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg></div>
+  </div>
+</section>
+
+<section class="w-full mb-15">
+  <div class="w-full overflow-hidden text-right">
+    <h2 class="relative text-xxl font-bold leading-collapse tracking-tighter text-gray-900 -mr-16 ">What</h2>
+  </div>
+</section>
+
+<section class="w-full mb-15 ">
+  <div class="flex flex-row w-full text-sm max-w-screen-xl mx-auto">
+    <div class="w-1/6"></div>
+    <div class="w-1/6">
+      <h3 class="text-2xl text-teal-900 font-bold mb-4">Services</h3>
+    </div>
+  </div>
+  <div class="flex flex-row w-full text-sm max-w-screen-xl mx-auto">
+    <div class="w-1/6"></div>
+    <div class="w-2/6 pl-8">
+      <ul class="leading-loose">
+        <li>Advertising</li>
+        <li>Design</li>
+        <li>Media Planning &amp; Buying</li>
+        <li>Social Media / Community Management</li>
+        <li>Content Creation &amp; Curation</li>
+        <li>All forms of Production</li>
+      </ul>
+    </div>
+    <div class="w-2/6">
+      <ul class="leading-loose">
+        <li>Strategy / Positioning / Architecture</li>
+        <li>Brand Naming / Corporate Identity</li>
+        <li>Research &amp; Analytics</li>
+        <li>Public Relations</li>
+        <li>All things Digital &mdash; like everything</li>
+        <li>Event Planning</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="w-full mb-15">
+  <div class="relative overflow-hidden">
+    <h2 class="relative text-xxl font-bold -left-10vw leading-collapse tracking-tighter text-gray-900 ">Where</h2>
+  </div>
+</section>
+
+<section class="w-full flex flex-row items-stretch px-8 mb-16">
+  <div class="w-1/3 flex flex-col items-center justify-center bg-gray-200">
+    <h3 class="font-medium text-3xl mb-4">Chicago</h3>
+    <p class="font-book mb-8">Blurb about something related to this one right here</p>
+    <p class="font-book mb-8">555.123.4567</p>
+    <a href="#"
+      class="inline-flex items-center bg-white text-black font-medium text-base rounded-full hover:bg-black hover:text-white group-hover:bg-black group-hover:text-white px-6 py-2 border-2 border-black transition-all duration-300">Shoot
+      Us A
+      Note</a>
+  </div>
+  <div class="w-2/3">
+    <img src="/uploads/about-where-fpo1.jpg" class="w-full h-auto" />
+  </div>
+</section>
+
+<section class="w-full flex flex-row flex-row-reverse items-stretch px-8 mb-16">
+  <div class="w-1/3 flex flex-col items-center justify-center bg-gray-200">
+    <h3 class="font-medium text-3xl mb-4">San Franciso</h3>
+    <p class="font-book mb-8">Blurb about something related to this one right here</p>
+    <p class="font-book mb-8">555.123.4567</p>
+    <a href="#"
+      class="inline-flex items-center bg-white text-black font-medium text-base rounded-full hover:bg-black hover:text-white group-hover:bg-black group-hover:text-white px-6 py-2 border-2 border-black transition-all duration-300">Shoot
+      Us A
+      Note</a>
+  </div>
+  <div class="w-2/3">
+    <img src="/uploads/about-where-fpo2.jpg" class="w-full h-auto" />
+  </div>
+</section>
+
+<section class="w-full pt-37 pb-18">
+  <div class="w-4/6 text-center mx-auto">
+    <h2 class="text-black text-6xl font-bold leading-tight mb-8">In good company<br />with good companies.</h2>
+    <p class="text-orange-900 text-3xl font-medium">A few of the brands we're BFF's with...</p>
+  </div>
+  <div class="flex items-stretch flex-row flex-wrap max-w-screen-lg mx-auto py-5">
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-firestone.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-grossmont.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-zebra.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-us-soccer.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-atkore.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-primewell.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-luchese.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-navistar.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-bradley.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-bridgestone.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-turtle-wax.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-papermate.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-snap-on.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-ausl.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+    <div class="w-1/3 md:w-1/5 px-4 px-4 py-10 text-center">
+      <img src="/uploads/logo-cope.png" class="max-w-full h-auto block mx-auto" />
+    </div>
+  </div>
+</section>
+
+<section class="w-full py-25">
+  <div class="text-center">
+    <a href="#"
+      class="inline-flex items-center bg-white text-black font-medium text-base rounded-full hover:bg-black hover:text-white group-hover:bg-black group-hover:text-white px-6 py-2 border-2 border-black transition-all duration-300">
+      <span>BUT WAIT &mdash; There's So Much More ...</span>
+    </a>
+  </div>
+</section>
+
+
+
+{% endblock %}

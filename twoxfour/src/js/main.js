@@ -1,13 +1,21 @@
 import "../css/styles.scss";
 
 import $ from "jquery";
-import Home from "./modules/home";
+import About from "./pages/about";
+import Home from "./pages/home";
+import Work from "./pages/work";
+import Carousel from "./modules/carousel";
+import Video from "./modules/video";
 
 export default class Main {
   constructor() {
     // classMapping associates js Class to string value from data-js-module attribute on Html element(s)
     this.classMapping = {
       home: Home,
+      carousel: Carousel,
+      video: Video,
+      work: Work,
+      about: About,
     };
   }
 

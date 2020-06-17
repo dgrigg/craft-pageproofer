@@ -25,6 +25,9 @@
     "axios": "^0.18.0",
     "body-scroll-lock": "^2.6.4",
     "jquery": "^3.4",
+    "modal-video": "^2.4.2",
+    "stylelint-config-strict": "^5.0.0",
+    "swiper": "^5.4.2",
     "tailwindcss": "^1.0.5",
     "tailwindcss-aspect-ratio": "3.0.0",
     "tailwindcss-transitions": "^2.1.0"

@@ -2,6 +2,17 @@
 
 //add custom css here
 
+@import "~swiper/css/swiper";
+
+.swiper-button-prev, .swiper-button-next {
+  &::after {
+    display: none;
+    content: '';
+  }
+}
+
+@import "~modal-video/scss/modal-video";
+
 @import "typography";
 
 @import "~tailwindcss/components";
